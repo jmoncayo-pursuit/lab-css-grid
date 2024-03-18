@@ -1,0 +1,143 @@
+:root {
+    --background-blue: #3328e2;
+    --yellowish: #f5d003;
+    --soft-white: #f7f7f7;
+    --bright-red: #ed1512;
+    --bordersize: 16px solid black;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+}
+ 
+.frame {
+    height: 622px;
+    width: 466px;
+    border-top: var(--bordersize);
+    border-bottom: var(--bordersize);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    box-shadow: -4px 0px 10px -6px rgba(0,0,0,0.2),
+                -7px 0px 10px -6px rgba(0,0,0,0.60); /* blended shadows*/
+}
+
+.red {
+    background-color: var(--bright-red);
+}
+
+.white {
+    background-color: var(--soft-white);
+}
+
+.blue {
+    background-color: var(--background-blue);
+}
+
+.yellow {
+    background-color: var(--yellowish);
+}
+
+.item {
+    position: relative;
+}
+
+.item.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border-right: var(--bordersize);
+    border-bottom: var(--bordersize);
+}
+
+.item.two { 
+    grid-column: 2 / 5;
+    grid-row: 1 / 4;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+}
+
+.item.three {
+    grid-column: 5 / 9;
+    grid-row: 1 / 4;
+    border-bottom: var(--bordersize);
+}
+
+.item.four {
+    grid-row-start: 4;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+}
+
+.item.five { 
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+} 
+
+.item.six {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-right: var(--bordersize);
+    border-bottom: var(--bordersize);
+}
+
+.item.seven {
+    grid-column: span 4;
+    grid-row: span 1;
+    border-bottom: var(--bordersize);
+}
+
+.item.eight {
+    grid-column: span 1;
+    grid-row: span 6;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+
+}
+
+.item.nine {
+    grid-column: span 2;
+    grid-row: span 6;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+} 
+
+.item.ten {
+    grid-column: span 1;
+    grid-row: span 6;
+    border-bottom: var(--bordersize);
+    border-right: var(--bordersize);
+}
+
+.item.eleven {
+    grid-column: span 4;
+    grid-row: span 6;
+    border-bottom: var(--bordersize);
+}
+
+.item.twelve {
+    height: auto;
+    grid-row: span 2;
+    border-right: var(--bordersize);
+}
+
+.item.thirteen {
+    grid-column: span 3;
+    grid-row: span 2;
+    border-right: var(--bordersize);
+}
+
+.item.fourteen {
+    grid-column: span 4;
+    grid-row: span 2;
+}

@@ -5,8 +5,8 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 609px;
+    width: 683px;
     position: relative;
 }
  
@@ -72,7 +72,7 @@ html, body {
     grid-row: 3/4;
 }
 
-.item-eight {
+.item.eight {
     grid-column: 3/4;
     grid-row: 4/5;
 }
